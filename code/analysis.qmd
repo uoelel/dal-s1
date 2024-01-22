@@ -1,0 +1,132 @@
+---
+title: "Summative 1"
+author: "YOUR EXAM NUMBER"
+format:
+  html:
+    embed-resources: true
+---
+
+**DUE Week 10 - Thu 28 March at noon**
+
+Attach the necessary packages.
+
+```{r}
+
+```
+
+
+## Exercise 1
+
+### Sluckin 2022
+
+Read `sluckin2022/everywhere-loc.csv`.
+
+```{r}
+
+```
+
+Create the following new columns:
+
+- `Restrictor_c`: recode `Restrictor` so that `0` is `non-restricted` and `1` is `restricted`.
+- `Value_f`: recode `Value` so that `Value_f` is a factor.
+
+```{r}
+
+```
+
+Create a plot that shows the number of responses for each combination of `Age` and `Education`. Write a description.
+
+```{r}
+
+```
+
+Create a plot of the proportion of each value of `Value_f` for each combination of `Restricted_c` and `Age`. Write a description.
+
+```{r}
+
+```
+
+Create a plot of the proportion of each value of `Value_f` for each combination of `Restricted_c`, `Education` and `Age`. Exclude data from participants whose highest degree are `PhD` or `Primary`. Write a description.
+
+```{r}
+
+```
+
+### Ota 2009
+
+Read `ota2009/key-rock.csv`.
+
+```{r}
+
+```
+
+Transform the data so that:
+
+- `ACC_f` is a the factor version of `Words.ACC`, where `0` is `incorrect` and `1` is `correct` (also make sure the order of the levels is `incorrect`, `correct`).
+- Only the `TrialProc` data is included.
+
+```{r}
+
+```
+
+Create a strip chart of logged reaction times depending on accuracy. Include a red dot indicating the median reaction times for each level of accuracy.
+
+```{r}
+
+```
+
+Create a violin plot of logged reaction times depending on accuracy. Facet the plot so that there are three column panels for each level of condition. Include the mean with bootstrapped CIs in blue.
+
+```{r}
+
+```
+
+Create a filled stacked bar chart of accuracy depending on condition and contrast. Use faceting for the contrast values.
+
+```{r}
+
+```
+
+
+## Exercise 2
+
+You have to read and wrangle the files in `data/sim/`. The files are organised like so:
+
+- `data/sim/data-2` has several `.csv` files, each with data from a single participant.
+
+  - These files contain the responses of a language questionnaire (`Q1`, `Q2`, and `Q3`) and a demographics questionnaire.
+  - `date` is just the date in which the subject participated in the study.
+  - `Q1` is a simple "yes/no" question.
+  - `Q2` is a 3-point Likert scale question: "frequently", "sometimes", "rarely".
+  - `Q3` is a a 5-point Likert scale multiple-item question: participants rated each of 5 items on the 5-point scale (from 1 to 5). Each item rating is recorded in its own column (`Q3a`, `Q3b`, `Q3c`, ...).
+  - The responses of the demographic questionnaire are in the last two columns of the table: `question` and `value`.
+  - For the `gender` question, the response is coded in the `question` column instead of the `value` column: `gender:NB` is non-binary, `gender:F` is female, `gender:M` is male and `gender:O` is other.
+  - The other questions are `age`, `group` ("monolingual" vs "bilingual") and `biling_score` (bilingualism score from 0 to 100).
+
+- `data/sim/data-2-exp.csv` has responses of all participants from an experimental task. The file has the following columns.
+
+  - `id`: the participant numeric ID (this is the same as the number in the file names in `/data/sim/data-2`).
+  - `type`: trial type, `practice` vs `test`.
+  - `condition`: experimental condition, `easy` or `difficult`.
+  - `accuracy`: whether the response was correct `1` or `incorrect`.
+  - `rt`: reaction times of the response in ms.
+  
+Wrangle the data using a combination of filtering, mutating, pivoting and joining so that you get a single data frame with the following columns:
+
+- `id`: as the path of the file in `data/sim/data-2`.
+- `date`.
+- `Q1`, `Q2`, and the five `Q3` columns.
+- `gender`.
+- `age` as a *numeric* column.
+- `group`.
+- `biling_score`.
+- `subj`: the participant numeric ID as a character column.
+- `type` should only have `"test"` (filter out the `"practice"` trials).
+- `condition`.
+- `accuracy` as a factor column with `"incorrect"` and `"correct"` as the values.
+- `rt`: reaction times rounded to the nearest integer.
+
+```{r}
+
+```
+

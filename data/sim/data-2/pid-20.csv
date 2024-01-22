@@ -1,0 +1,7 @@
+# created with AwesomeExperimenter 0.1, (c) Polly Darton
+date,Q1,Q2,Q3a,Q3b,Q3c,Q3d,Q3e,type,question,value
+2024-01-29,yes,rarely,2,5,2,1,2,NA,NA,NA
+2024-01-29,NA,NA,NA,NA,NA,NA,NA,form,gender:M,NA
+2024-01-29,NA,NA,NA,NA,NA,NA,NA,form,age,32 yo
+2024-01-29,NA,NA,NA,NA,NA,NA,NA,form,group,bilingual
+2024-01-29,NA,NA,NA,NA,NA,NA,NA,form,biling_score,88

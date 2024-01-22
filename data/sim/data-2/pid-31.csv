@@ -1,0 +1,7 @@
+# created with AwesomeExperimenter 0.1, (c) Polly Darton
+date,Q1,Q2,Q3a,Q3b,Q3c,Q3d,Q3e,type,question,value
+2024-02-09,no,sometimes,3,5,4,5,1,NA,NA,NA
+2024-02-09,NA,NA,NA,NA,NA,NA,NA,form,gender:M,NA
+2024-02-09,NA,NA,NA,NA,NA,NA,NA,form,age,35 yo
+2024-02-09,NA,NA,NA,NA,NA,NA,NA,form,group,monolingual
+2024-02-09,NA,NA,NA,NA,NA,NA,NA,form,biling_score,48
