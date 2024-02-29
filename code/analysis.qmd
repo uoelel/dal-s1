@@ -19,7 +19,7 @@ Attach the necessary packages.
 
 ### Sluckin 2022
 
-Read `sluckin2022/everywhere-loc.csv`.
+Read `sluckin2022/everywhere-loc.csv`. Information on the data and study can be found [here](https://uoelel.github.io/qm-data/data/sluckin2022/everywhere-loc.html).
 
 ```{r}
 
@@ -54,7 +54,7 @@ Create a plot of the proportion of each value of `Value_f` for each combination 
 
 ### Ota 2009
 
-Read `ota2009/key-rock.csv`.
+Read `ota2009/key-rock.csv`. Information on the data and study can be found [here](https://uoelel.github.io/qm-data/data/ota2009/key-rock.html).
 
 ```{r}
 
